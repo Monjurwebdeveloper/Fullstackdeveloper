@@ -1,0 +1,127 @@
+.header-div {
+    background-color: skyblue;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h3 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: black;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    justify-content: space-evenly;
+    
+}
+
+
+nav a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+/*#home-container 
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    /*flex-direction: column; /* Stacks children vertically */
+    /*align-items: center;    /* Centers horizontally */
+    /*justify-content: center; /* Centers vertically */
+
+
+.intro {
+    width: 50%;        
+    text-align: center;
+    margin: 20px auto 20px;
+    border: 2px solid #333; 
+    padding: 20px;    
+}
+
+.skills {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    border: 2px solid #333; 
+    padding: 20px;
+    /*flex: 1;*/
+    margin-right: auto;          
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.projects {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    border: 2px solid #333; 
+    padding: 20px;
+    /*flex: 1;*/
+    margin-left: auto; 
+}
+
+.projects ul {
+    list-style-type: none;
+}
+
+.two-divs {
+    display: flex;
+}
+
+.scroll-hobby {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: aquamarine;
+    padding: 10px;
+
+}
+
+.scroll-hobby1 {
+    width: 100%;
+    background-color: #333;
+    color: aquamarine;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+
+.hobby-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLeft 15s linear infinite;
+} 
+
+.hobby-content span {
+    padding: 0 40px;
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+
+.footer {
+    background-color: #333;
+    color: azure;
+    text-align: center;
+}
