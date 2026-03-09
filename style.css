@@ -1,0 +1,77 @@
+.header {
+    background-color: rgb(0, 110, 255);
+    width: 100%;
+    display: flex;             /* Makes the div a flex container */
+    flex-direction: column;    /* Stacks h1 and h3 vertically */
+    /*align-items: center;       /* Centers items horizontally */
+    justify-content: center;    /* Centers items vertically */
+    padding: 20px 0;           /* Optional: adds space inside */
+    text-align: center;
+}
+
+h1, h3 {
+    color: white;              /* Fix for text color */
+    margin: 5px 0;             /* Small gap between titles */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the form horizontally */
+    margin: 0;           /* Removes default browser gaps */
+}
+
+/* Container spacing */
+.account-form {
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* MOBILE FIRST: Stack everything vertically by default */
+.form-row {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+/* TABLET/DESKTOP: Side-by-side only when the screen is wide enough */
+@media (min-width: 480px) {
+    .form-row {
+        flex-direction: row;
+    }
+}
+
+.form-row .field {
+    flex: 1; /* Ensures equal width columns */
+}
+
+/* Vertical stack for labels and inputs */
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.submit-row button {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input {
+    padding: 12px;      /* Bigger tap target */
+    font-size: 16px;    /* Prevents iOS from auto-zooming when typing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
